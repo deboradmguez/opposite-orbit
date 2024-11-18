@@ -21,7 +21,7 @@ h2 {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #4a00e0 0%, #8e2de2 50%, #efd5ff 100%);
+    background: linear-gradient(90deg, rgba(74,0,224,1) 0%, rgba(64,26,88,1) 100%);
 
 }
 @keyframes fadeIn {
@@ -36,7 +36,9 @@ body {
 
 
 #secciones, .navbar {
-    background: linear-gradient(90deg, #4a00e0 0%, #8e2de2 50%, #efd5ff 100%) !important;
+    background: linear-gradient(90deg, rgba(74,0,224,1) 0%, rgba(64,26,88,1) 100%);
+
+
 }
 
 /* Estilo para el nombre */
