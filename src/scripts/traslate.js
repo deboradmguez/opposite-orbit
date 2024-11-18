@@ -30,7 +30,7 @@ const translations = {
         "education": {
             "title": "Formación",
             "background": "Educación",
-            "description": "Estoy terminando mi Tecnicatura en Desarrollo de Software en el Instituto de Formación Docente y Técnica 'República Federal de Alemania'.",
+            "description": "He cursado esta tecnicatura por 3 años, gracias a ella pude desarrollar habilidades avanzadas en programación, diseño de software y bases de datos. <br>Esta carrera ha sido la base de mis proyectos, como la gestión de un lavadero y otras aplicaciones web.",
             "button": "Visitar Página del Instituto ➔"
         },
 
@@ -89,8 +89,7 @@ const translations = {
         "education": {
             "title": "Education",
             "background": "Background",
-            "description": "I'm finishing my Software Development Technical Degree at the Teacher Training and Technical Institute 'República Federal de Alemania'.",
-            "button": "Insitute's website ➔"
+            "description": "I have studied this technical program for 3 years, and it has allowed me to develop advanced skills in programming, software design, and databases. <br>  This program has been the foundation for my projects, such as managing a car wash and other web applications."
         },
 
         "courses": {
