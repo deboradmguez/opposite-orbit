@@ -8,9 +8,9 @@ import '../styles/global.css';
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Débora, desarrolladora de software especializada en frontend y backend, crea soluciones web innovadoras.">
-	<meta name="keywords" content="desarrolladora de software, frontend, backend, HTML, CSS, JavaScript, PHP, MySQL">
+    <meta name="description" content="" data-key="metaDescription">
+    <meta name="keywords" content="" data-key="metaKeywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Débora Dominguez </title>
 	<link
@@ -20,35 +20,44 @@ import '../styles/global.css';
 
 </head>
 <body>
-		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-				<div class="container-fluid">
-					<a class="navbar-brand d-flex align-items-center" id="nombre" href="#" style="text-decoration: none;">
-						<img src="/assets/perfil.jpeg" alt="Imagen de perfil" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
-						<span>Dominguez, Débora</span>
-					</a>
-					
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div  class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
-							<li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-							<li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
-							
-							<li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-						</ul>
-					</div>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand d-flex align-items-center" id="nombre" href="#" style="text-decoration: none;">
+					<img src="/assets/perfil.jpeg" alt="Imagen de perfil" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+					<span>Dominguez, Débora</span>
+				</a>
+	
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<!-- Aquí es donde el contenido colapsable de la navbar se coloca -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#about" data-key="navbar.about">Acerca de mí</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects" data-key="navbar.projects">Proyectos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#education" data-key="navbar.education">Formación</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact" data-key="navbar.contact">Contacto</a>
+						</li>
+					</ul>
+					<button id="language-switch">English</button>
 				</div>
-			</nav>
-			
-		</header>
+			</div>
+		</nav>
+	</header>
+	
 	
 
-	<section id="about" class="about-section">
+	<section id="about" class="about-section py-5">
 		<div class="container text-center pt-5">
-			
 			<div class="row align-items-center justify-content-center">
 				<!-- Imagen -->
 				<div class="col-md-4">
@@ -58,8 +67,11 @@ import '../styles/global.css';
 				</div>
 				<!-- Texto -->
 				<div class="col-md-8 mb-3">
-					<p>
-						¡Hola! Soy <strong>Débora,</strong> una desarrolladora de software con pasión por crear páginas web que no solo se vean increíbles, sino que también sean súper funcionales. Me encanta trabajar en el frontend, pero también tengo experiencia en backend, lo que me da la ventaja de construir soluciones completas. Mi objetivo es simple: convertir ideas en experiencias digitales que sorprendan, inspiren y conecten a las personas.
+					<p data-key="about.intro">
+						¡Hola! Soy <strong>Débora,</strong> una desarrolladora de software apasionada por crear páginas web increíbles. Mi objetivo es simple: convertir ideas en experiencias digitales que sorprendan, inspiren y conecten a las personas.
+					</p>
+					<p data-key="about.goal">
+						
 					</p>
 				</div>
 				
@@ -70,7 +82,7 @@ import '../styles/global.css';
 
 	<section id="technologies" class="py-5">
 		<div class="container text-center p-4">
-			<h4 class="text-sm-start text-md-center">Estas son algunas de las herramientas que <br> utilizo para desarrollar mis proyectos:</h4>
+			<h4 data-key="technologies.title" class="text-sm-start text-md-center">Estas son algunas de las herramientas que <br> utilizo para desarrollar mis proyectos:</h4>
 			<br>
 			<!-- Carrusel dinámico -->
 			<div class="marquee">
@@ -101,10 +113,11 @@ import '../styles/global.css';
 		<div class="container pt-5">
 			<div class="row align-items-center flex-column-reverse flex-md-row">
 				<div class="col-md-4">
-					<h3 id="lavadero-texto"> <strong>Proyecto: </strong>Sistema web para gestionar un lavadero</h3>
-					<p class="lead">Creada con html, css, javascript y php para conectar a la base de datos en mysql</p>
-					<a href="https://github.com/deboradmguez/gestionLavadero" class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Ver en GitHub ➔
-					</a>
+					<h3 id="lavadero-texto" data-key="projects.carWashTitle"> <strong>Proyecto: </strong>Sistema web para gestionar un lavadero</h3>
+                <p class="lead" data-key="projects.carWashDescription">Creada con HTML, CSS, JavaScript y PHP para conectar a la base de datos en MySQL</p>
+                <a  href="https://github.com/deboradmguez/gestionLavadero" class="btn btn-primary btn-lg mt-3" data-key="projects.githubButton" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+                    Ver en GitHub ➔
+                </a>
 				</div>
 				
 				<!-- Carrusel -->
@@ -141,13 +154,13 @@ import '../styles/global.css';
 	
 	<section id="education" class="py-5 ">
 		<div class="container mt-4 p-5" style="background: #CBBAED; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
-			<h2 class="text-center">Formación Académica</h2>
+			<h2 data-key="education.title" class="text-center">Formación Académica</h2>
 			<div class="row justify-content-center">
 				<!-- Carrera principal -->
 				<div class="col-md-8">
 					<h4 class="text-sm-start text-md-center">Instituto de Formación Docente y Técnica "República Federal de Alemania"</h4>
-					<p><strong>Tecnicatura en Desarrollo de Software</strong></p>
-					<p>He cursado esta tecnicatura por 3 años, gracias a ella pude desarrollar habilidades avanzadas en programación, diseño de software y bases de datos. <br>Esta carrera ha sido la base de mis proyectos, como la gestión de un lavadero y otras aplicaciones web.</p>
+					<p  ><strong>Tecnicatura en Desarrollo de Software</strong></p>
+					<p data-key="education.description">He cursado esta tecnicatura por 3 años, gracias a ella pude desarrollar habilidades avanzadas en programación, diseño de software y bases de datos. <br>Esta carrera ha sido la base de mis proyectos, como la gestión de un lavadero y otras aplicaciones web.</p>
 					<a href="https://isfdalemania-for.infd.edu.ar/sitio/" class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
 						Visitar Página del Instituto ➔
 					</a>
@@ -157,31 +170,29 @@ import '../styles/global.css';
 		</div>
 	</section>
 	
-	
-
-	<section id="courses" class="">
+	<section   id="courses" class="py-5">
 		<div class="container text-center">
-			<h2 id="cursos">Cursos Realizados</h2>
-			<h4 id="cursos">A lo largo de mi formación, he tomado varios cursos que me han permitido mejorar mis habilidades como desarrolladora de software.</h4>
+			<h2  data-key="courses.title" id="cursos">Cursos Realizados</h2>
+			<h4  data-key="courses.intro" id="cursos">A lo largo de mi formación, he tomado varios cursos que me han permitido mejorar mis habilidades como desarrolladora de software.</h4>
 			<div class="row justify-content-center">
 				<div class="col-md-5 mb-4">
 					<div class="card course-card">
 						<div class="card-body">
-							<h4  class="card-title text-sm-start text-md-center">Certificado - Aprender a Aprender: Técnicas para tu Autodesarrollo</h4>
-							<p><strong>Fecha de finalización:</strong> Mayo 2023</p>
-							<p><strong>Descripción:</strong> Curso en línea de 8 horas sobre técnicas de aprendizaje, enfocándose en el autodesarrollo y cómo mejorar la forma en que adquirimos y procesamos conocimiento.</p>
-							<a href="https://app.aluracursos.com/certificate/bed8b403-b22c-41e2-ada8-beb2622a9c8c"  class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Ver Certificado</a>
+							<h4  data-key="courses.course1.title" class="card-title text-sm-start text-md-center">Certificado - Aprender a Aprender: Técnicas para tu Autodesarrollo</h4>
+							<p  data-key="courses.course1.date"><strong>Fecha de finalización:</strong> Mayo 2023</p>
+							<p  data-key="courses.course1.description"><strong>Descripción:</strong> Curso en línea de 8 horas sobre técnicas de aprendizaje, enfocándose en el autodesarrollo y cómo mejorar la forma en que adquirimos y procesamos conocimiento.</p>
+							<a href="https://app.aluracursos.com/certificate/bed8b403-b22c-41e2-ada8-beb2622a9c8c"  class="btn btn-primary btn-lg mt-3" style="background-color: #4a00e0; border-color: #4a00e0; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);"  data-key="courses.course1.button">Ver Certificado</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5 mb-4">
 					<div class="card course-card">
 						<div class="card-body">
-							<h4 class="card-title text-sm-start text-md-center">Diploma - Programa Codo a Codo</h4>
-							<p><strong>Fecha:</strong> Junio 2023</p>
-							<p><strong>Descripción:</strong> Este curso me permitió adquirir conocimientos profundos en desarrollo web y programación. Incluye temas de backend, frontend y buenas prácticas de desarrollo.</p>
+							<h4  data-key="courses.course2.title" class="card-title text-sm-start text-md-center">Diploma - Programa Codo a Codo</h4>
+							<p  data-key="courses.course2.date"><strong>Fecha de finalización:</strong> Junio 2023</p>
+							<p  data-key="courses.course2.description"><strong>Descripción:</strong> Este curso me permitió adquirir conocimientos profundos en desarrollo web y programación. Incluye temas de backend, frontend y buenas prácticas de desarrollo.</p>
 						<br>
-						<a href="https://drive.google.com/file/d/1kueQRTve4pPkbbcO8kYCxKZyrJ7IYfEk/view?usp=drivesdk"   class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Ver Diploma</a>
+						<a href="https://drive.google.com/file/d/1kueQRTve4pPkbbcO8kYCxKZyrJ7IYfEk/view?usp=drivesdk"   class="btn btn-primary btn-lg mt-3" style="background-color: #4a00e0; border-color: #4a00e0; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);"  data-key="courses.course2.button" >Ver Diploma</a>
 						</div>
 					</div>
 				</div>
@@ -198,20 +209,17 @@ import '../styles/global.css';
 		<div class="container text-center p-4">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-md-8">
-					<h3 class="mb-3">Blog: "Explorando el futuro de la programación en la era de la inteligencia artificial"</h3>
+					<h3 class="mb-3" data-key="blog.title">Blog: "Explorando el futuro de la programación en la era de la inteligencia artificial"</h3>
 					<p class="text">
-						<i id="fecha-blog" class="fa-solid fa-calendar"></i> Publicado el 9 de mayo de 2024
+						<i id="fecha-blog" class="fa-solid fa-calendar"></i> <span data-key="blog.date">Publicado el 9 de mayo de 2024</span>
 					</p>
-					<p>
-						Reflexiono sobre cómo la inteligencia artificial está transformando el mundo de la programación,
-						analizando los roles que podrían ser reemplazados por esta tecnología y las habilidades humanas que seguirán siendo esenciales.  
+					<p data-key="blog.intro">
+						Reflexiono sobre cómo la inteligencia artificial está transformando el mundo de la programación, analizando los roles que podrían ser reemplazados por esta tecnología y las habilidades humanas que seguirán siendo esenciales.
 					</p>
-					<a href="https://isfdytdigital.net.ar/explorando-el-futuro-de-la-programacion-en-la-era-de-la-inteligencia-artificial/"   class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Leer más</a>
+					<a href="https://isfdytdigital.net.ar/explorando-el-futuro-de-la-programacion-en-la-era-de-la-inteligencia-artificial/" class="btn btn-primary btn-lg mt-3" style="background-color: #9137cb; border-color: #9137cb; border-radius: 25px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);" data-key="blog.button">Leer más</a>
 				</div>
 				<div class="col-md-4">
-					<img src="/assets/img-blog.jpeg" 
-						alt="Imagen representativa del blog sobre IA y programación" 
-						class="img-fluid rounded">
+					<img src="/assets/img-blog.jpeg" alt="Imagen representativa del blog sobre IA y programación" class="img-fluid rounded">
 				</div>
 			</div>
 		</div>
@@ -219,8 +227,9 @@ import '../styles/global.css';
 	
 	
 	
+	
 	<section id="contact" class="section mt-2">
-		<h2>Puedes contactarme a través de:</h2>
+		<h2 data-key="navbar.contact">Puedes contactarme a través de:</h2>
 		<p></p>
 		<ul class="contact-icons">
 			<li>
@@ -241,7 +250,8 @@ import '../styles/global.css';
 		</ul>
 	</section>
 	<script>
-		import "bootstrap/dist/js/bootstrap.bundle.min.js";
+		import "bootstrap/dist/css/bootstrap.min.css";
 	</script>
+	<script src="../scripts/traslate.js"></script>
 </body>
 </html>
