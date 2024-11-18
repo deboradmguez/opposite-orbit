@@ -18,6 +18,22 @@ h2 {
     width: 100%;
     z-index: 1050;  /* Un valor alto para asegurar que esté por encima */
 }
+.navbar-toggler {
+    border: none; /* Elimina el borde */
+    background: transparent; /* Elimina cualquier fondo */
+    padding: 0; /* Opcional: elimina espacios extra */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 30px; /* Ajusta el tamaño si es necesario */
+    height: 30px;
+}
+.navbar-toggler:focus {
+    outline: none; /* Quita el contorno predeterminado */
+    box-shadow: none; /* Elimina sombras residuales */
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -31,6 +47,12 @@ body {
 
 .container {
     animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #about img {
+        display: none;
+    }
 }
 
 
