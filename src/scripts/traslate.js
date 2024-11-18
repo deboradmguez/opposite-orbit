@@ -118,7 +118,7 @@ const translations = {
 };
 
 
-// Función para cambiar el idioma
+/// Función para cambiar el idioma
 function changeLanguage(lang) {
     console.log("Cambiando idioma a:", lang);  // Verificación
     const elements = document.querySelectorAll("[data-key]");
