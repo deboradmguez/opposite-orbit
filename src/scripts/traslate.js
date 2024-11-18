@@ -8,7 +8,8 @@ const translations = {
             "about": "Acerca de mí",
             "projects": "Proyectos",
             "education": "Formación",
-            "contact": "Contacto"
+            "contact": "Contacto",
+            "contact1": "Puedes contactarme a través de:"
         },
 
         "about": {
@@ -67,7 +68,8 @@ const translations = {
             "about": "About Me",
             "projects": "Projects",
             "education": "Education",
-            "contact": "Contact"
+            "contact": "Contact",
+            "contact1": "Contact me"
         },
 
         "about": {
