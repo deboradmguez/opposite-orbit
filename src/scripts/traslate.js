@@ -89,7 +89,8 @@ const translations = {
         "education": {
             "title": "Education",
             "background": "Background",
-            "description": "I have studied this technical program for 3 years, and it has allowed me to develop advanced skills in programming, software design, and databases. <br>  This program has been the foundation for my projects, such as managing a car wash and other web applications."
+            "description": "I have studied this technical program for 3 years, and it has allowed me to develop advanced skills in programming, software design, and databases. <br> This program has been the foundation for my projects, such as managing a car wash and other web applications.",
+            "button": "Institute's website ➔"
         },
 
         "courses": {
