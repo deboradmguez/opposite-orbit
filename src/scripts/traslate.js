@@ -46,7 +46,7 @@ const translations = {
             },
             "course2": {
                 "title": "Diploma - Programa Codo a Codo",
-                "date": "<strong>Fecha de finalización: </strong>Junio 2023",
+                "date": "<strong>Fecha de finalización: </strong>Diciembre 2022",
                 "description": "<strong>Descripción: </strong>Este curso me permitió adquirir conocimientos profundos en desarrollo web y programación. Incluye temas de backend, frontend y buenas prácticas de desarrollo.",
                 "button": "Ver Diploma"
             }
@@ -106,7 +106,7 @@ const translations = {
             },
             "course2": {
                 "title": "Diploma - Codo a Codo Program",
-                "date": "<strong>Date:</strong> June 2023",
+                "date": "<strong>Date:</strong> December 2022",
                 "description": "<strong>Description:</strong> This course allowed me to acquire in-depth knowledge in web development and programming. It covers backend, frontend, and best development practices.",
                 "button": "View Diploma"
             }
